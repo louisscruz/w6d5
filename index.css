@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  /*font-family: sans-serif;*/
+  font-family: 'Share Tech Mono', monospace;
+  background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#root > div {
+  width: 500px;
+  height: 800px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  display: inline-block;
+  flex: 1;
+}
+
+.header:hover {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.tab-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.clock {
+  display: flex;
+  justify-content: space-between;
+}
+
+input.filter-input {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 2px solid black;
+}
+
+input.filter-input:focus {
+  outline: none;
+}
